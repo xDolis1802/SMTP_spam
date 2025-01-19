@@ -3,17 +3,15 @@ import smtplib
 import random
 
 # Cuentas
-posiblesRemitentes = {"perosera629@gmail.com" : "rojt pfuy qjxs yiae", 
-                      "tev8886@gmail.com" : "uwbg nghx ttsp ahzo"}
+posiblesRemitentes = {"Correo" : "Código de seguridad", #aquí se cambian los correos y contraseñas de aplicación
+                      "Correo" : "Código de seguridad"}
 # Destinatario y mensaje
 destinatario = input("Digite su destinatario: ")
-#destinatario = "xDolis1802@gmail.com"
-#destinatario = "tt202462023@alm.buap.mx"
-#destinatario = "jose.sanchezci@correo.buap.mx"
+
 # Función para generar cadena aleatoria
 def enviarcorreo():
     # Este for es para la cantidad de mensajes
-    for i in range(20):
+    for i in range(20): #modificable para la cantidad de mensajes enviados
         # Esto tomará un usuario aleatorio y su respectiva contraseña
         remitente = random.choice(list(posiblesRemitentes))
         contraseña = posiblesRemitentes[remitente]
@@ -25,7 +23,7 @@ def enviarcorreo():
         # Acumulador para el mensaje completo
         mensajeCompleto = ""
         # Este for es para la cantidad de caracteres que se tomarán para enviar el correo    
-        for j in range(20):
+        for j in range(20): #modificable para la longitud del mensaje
             # Elige aleatoriamente letras y las concatena en un string
             letrasRandom = random.sample(letras, random.randint(1,54))
             letrasConcatenadas = "".join(letrasRandom)
