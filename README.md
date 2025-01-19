@@ -1,4 +1,4 @@
-# SMTP_spam
+# mailSpam
 Un script de python dedicado al spam de correo electrónico
 
 Para usar este script primero deberá de color el gmail desde donde se enviará el correo, marcado como "correo" en el diccionario llamada "posiblesRemitentes" esta diccionario se usa para enviar correos de spam desde diferentes remitentes hacia el mismo destinatarios, el código de seguridad es necesario para poder verificar el correo, este código de seguridad se obtiene al ir a Google, en la configuración de verificación en 2 pasos, abajo verás la opción de "contraseñas de aplicación" (si, se necesita tener la verificación en 2 pasos activada), esa contraseña de aplicación va en el value del diccionadio "posiblesRemitentes"
